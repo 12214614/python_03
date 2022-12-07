@@ -1,0 +1,10 @@
+import random
+def passwordgenerator():
+    uppercase="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    lowercase="abcdefghijklmnopqrstuvwxyz"
+    numbers="1234567890"
+    characters="!@@#$%^&*)(/][{}><"
+    add=uppercase+lowercase+numbers+characters
+    length=int(input('ENTER THE LENGTH OF PASSWORD YOU WANT:'))
+    password="".join(random.sample(add,length))
+    print("THE PASSWORD GENERATED IS :",password)
